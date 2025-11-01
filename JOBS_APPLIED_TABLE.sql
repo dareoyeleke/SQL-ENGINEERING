@@ -1,3 +1,4 @@
+-- creation of tables,inputing values and changing values of column names, column character types and column contents, and also learning how to drop said tables 
 CREATE TABLE jobs_applied (
     job_id INT,
     application_sent_date DATE, 
