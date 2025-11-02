@@ -1,4 +1,4 @@
---query to create a table AS january_jobs with a subquery
+--query to create a temporary result set AS january_jobs with a subquery
 SELECT * 
 FROM (
     SELECT *
@@ -7,7 +7,7 @@ FROM (
 ) AS january_jobs;
 
 
--- Query with a CTE to create TABLE january_jobs 
+-- Query with a CTE to create temporary TABLE january_jobs 
 WITH january_jobs AS (
     SELECT *
     FROM job_postings_fact
@@ -37,7 +37,7 @@ WHERE
 ORDER BY company_id; 
 
 
--- QUERY to use CTE to get temporary result set for companies with most job opening, i.e most job postings per company
+-- QUERY to use CTE to get temporary TABLE for companies with most job opening, i.e most job postings per company
 WITH company_job_count AS
 (
 SELECT 

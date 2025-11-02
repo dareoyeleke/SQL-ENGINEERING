@@ -1,3 +1,4 @@
+-- simple use of CASE WHEN statement to differentiate job location setting as local or remote 
 SELECT 
     COUNT(job_id) AS number_of_jobs,
 CASE 

@@ -1,3 +1,4 @@
+-- simple queries showcase use of DATE/TIME functions such as NOW(), TIMESTAMP, DATE with a cast operator (::), and TIME ZONE
 SELECT job_posted_date
 FROM job_postings_fact
 LIMIT 10;
