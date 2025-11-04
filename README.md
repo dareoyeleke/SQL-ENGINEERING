@@ -103,9 +103,9 @@ Each query in this project is aimed at investigating different aspects of the Da
       salary_year_avg DESC
   ```
 **The results show**
-- The top skills are SQL,excel and POWERBI with salaries of $118,640(USD) per annum in USD with the company Invernegy.
+- The top skills are SQL,Excel and POWERBI with salaries of $118,640(USD) per annum in USD with the company Invernegy.
 - Coming in second are Python as a skill and two of it's libraries numpy and panda along with SQL, zoom and slack at $100,500(USD) for Udacity Inc
-- Lastly American National pay $59,500(USD) for Data Analyst jobs with SQL and tablue skills respectively.
+- Lastly American National pay $59,500(USD) for Data Analyst jobs with SQL and Tablue skills respectively.
 - This result set also took into consideration that no skills without salary values i.e null values were pulled from the table.
 
 
@@ -131,8 +131,8 @@ Each query in this project is aimed at investigating different aspects of the Da
     ORDER BY skill_count DESC
   ```
  **The results show**
-  - Python and sql are the leading skills for US based or remote jobs with the total mention for each skill at 40,616 and 40,352 respectively
-  - Following the top two skills, we see a steep drop in the mention for aws and azure skills at 18,286 and 13,928  respectively
+  - Python and SQL are the leading skills for US based or remote jobs with the total mention for each skill at 40,616 and 40,352 respectively
+  - Following the top two skills, we see a steep drop in the mention for AWS and Azure skills at 18,286 and 13,928  respectively
 
 
 
@@ -161,9 +161,9 @@ Each query in this project is aimed at investigating different aspects of the Da
     - Pyspark (python BASED API, an open source framework for machine learning and big data analytics) with an average salary of $208,172
     - Bitbucket(Git based coding platform for hosting, managing and collaborating using git repositories) at $189,155,
     - Watson(IBM AI platform using natural language for data analysis and linear modelling) at $160,515
-    - couchbase(Cloud based database platform for high performance in-memory NoSQL database) at $160,515
+    - Couchbase(Cloud based database platform for high performance in-memory NoSQL database) at $160,515
     - Datarobot(AI platform for end to end learning and ML lifecycle and modeldeployment ) at $155,486
-    - The query also pulls data for the lower end with skills such as visual basic($62,500), ruby($61,780), css($52,500), ruby on rails($51,059) and wire($42,500)
+    - The query also pulls data for the lower end with skills such as Visual basic($62,500), Ruby($61,780), Css($52,500), Ruby on rails($51,059) and Wire($42,500)
       - **All in ($USD)**
     - This shows the differing range of salaries for jobs in the same field and how capitalizing on different skills sets can lead to vastly different outcomes in salary earned per year
 
@@ -215,10 +215,20 @@ Each query in this project is aimed at investigating different aspects of the Da
 # CONCLUSIONS 
 
 ### Insights
-  1) **Top Paying Data Analyst Jobs**
-  2) **Skills for Top-paying Jobs**
-  3) **Most In-Demand Skills**
-  4) **Skills with Higher Salaries**
-  5) **Optimal Skills for Job Market Value**
+  1) **Top Paying Data Analyst Jobs --** There is a wide Salary range From $40 - $650 thousand (USD) indicating significant potential salaries in the field from diverse employers ranging from Tech companies to law firms to even job recruiters, different sectors of the economy need and pay well for Data Analysis skills. Diverse job titles show diverse job roles in finance, tech, management to name a few
+  2) **Skills for Top-paying Jobs --**  The top skills are SQL,Excel and POWERBI with salaries of $118,640(USD) per annum. Coming in second are Python and Python libraries, SQL, Zoom and Slack at $100,500(USD). Lastly we have $59,500(USD) for Data Analyst jobs with SQL and Tablue skills respectively.
+  3) **Most In-Demand Skills --**  Python and SQL are the leading skills for US based or remote jobs with the total mention for each skill at 40,616 and 40,352 respectively. Following the top two skills, we see a steep drop in the mention for AWS and Azure skills at 18,286 and 13,928  respectively
+  4) **Skills with Higher Salaries --** The top five skills differ from the past 3 result sets by showing niche skills such as Pyspark with an average salary of $208,172, Bitbucket at $189,155, Watson at $160,515, Couchbase at $160,515 and Datarobot at $155,486
+      The query also pulls data for the lower end with skills such as Visual basic($62,500), Ruby($61,780), Css($52,500), Ruby on rails($51,059) and Wire($42,500) **All in ($USD)** This shows the differing range of salaries for jobs in the same field and how specializing in specific skills sets can lead to vastly different outcomes in salary earned per year
+  5) **Optimal Skills for Job Market Value --**  - AWS, Spark, SQL and Python come in at the highest annual salary rates at $165,000 (USD). Closely followed by PowerBI at number 5 with an annual salary rate of $150,000 (USD). The lower end of the spectrum come in at SQL, Excel and Word for $50,000 (USD) and lastly SQL and Excel at $45,000(USD). This shows even with the same skills, salary growth in the field as a data analyst is not only realistic, but very consistent due to the number of jobs avaialble per skill with different salary ranges 
+
 
 ### Closing Thoughts
+```
+This project enhanced my SQL skills by a lot, I had previously tried to learn SQL on my own and while I made progress,
+it was discouraging just learning it without a game plan or something to work towards.
+Having Luke Barousse guide me and give me realistic examples and real world application projects related to SQL was really monumental to my understanding and motivation to learning SQL.
+This project also gave me an idea of how SQL and other skills such as Python and Python libraries such as numpy,
+pandas and skills such as Pyspark which involve having to specialize give me hope that guided effort in this field can be rewarded with good pay. Especially in a world reliant on technology,
+therefore data, with SQL and the skills highlighted in this project I realize I'm working towards something that will pay off as I put more effort and specialize in my specific career path
+```
