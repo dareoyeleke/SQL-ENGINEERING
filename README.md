@@ -1,13 +1,13 @@
-# sql_project_data_analysis_jobs 
+# sql_project_data_analysis_jobs 🧮
 
 
-# INTRODUCTION
+# INTRODUCTION 📢
 By Diving into the job market, and focusing on data analyst role, this project explores top paying jobs, in-demand skills and the intersecrtion between high demand skills and high salaries in data analytics. Check it out here ([sql_basics_project.ipynb](https://github.com/dareoyeleke/sql_queries_colab/blob/da219484324013f37575926119d1bc79ef830913/sql_basics_project.ipynb))
 
 
 
-# BACKGROUND
-The Data I used for this project, while imported from my google drive was from (https://lukebarousse.com/sql)
+# BACKGROUND 📜
+The Data I used for this project, while imported from my google drive was from (https://lukebarousse.com/sql)🗂️ 
 ### The questions I wanted to answer through my queries were 
 1) What are the top paying Data-analyst jobs?
 2) What skills are required for these top-paying jobs?
@@ -17,7 +17,7 @@ The Data I used for this project, while imported from my google drive was from (
 
 
 
-# TOOLS I USED
+# 🧰 TOOLS I USED 🛠️
 For my dive into the data analyst job market, I used several key tools including 
 - **SQL**: The most important tool for my analysis, both implemented in VScode and Google colab IDE
 - **PostgreSQL**: The database management system used to handle the job postings data
@@ -28,9 +28,9 @@ For my dive into the data analyst job market, I used several key tools including
 - **Git&Github** : Used for collaboration and project tracking to share my SQL queries from both IDE's.
 
 
-# The ANALYSIS
+# The ANALYSIS 🔍
 Each query in this project is aimed at investigating different aspects of the Data analyst job market 
-### 1) Top paying Data Analyst Jobs - To identify the highest paying roles by filtering data analyst positions by average yearly salary, degree requirement and location.
+### 1) 💰Top paying Data Analyst Jobs - To identify the highest paying roles by filtering data analyst positions by average yearly salary, degree requirement and location.
   ```sql
     SELECT
       name AS company_name,
@@ -49,7 +49,7 @@ Each query in this project is aimed at investigating different aspects of the Da
   ```
 
 
-**The results show**
+**💡The results show**
   - Wide Salary range From $40 - $650 thousand (USD) indicating significant potential salaries in the field
   - Diverse employers From Tech companies to law firms to even job recruiters, different sectors of the economy need and pay well for Data Analyst skills
   - Job Variety Along with diverse employers, diverse job titles show diverse job roles in finance, tech, management to name a few
@@ -57,7 +57,7 @@ Each query in this project is aimed at investigating different aspects of the Da
 
 
 
-### 2) Top paying skills :: Building on the last query, adding the specific skills needed for said jobs to help understand what skills are required to get those jobs to encourage guided effort towaards building those skills
+### 2)💸Top paying skills :: Building on the last query, adding the specific skills needed for said jobs to help understand what skills are required to get those jobs to encourage guided effort towaards building those skills
   ```sql
     WITH data_analyst_jobs AS
     (
@@ -102,7 +102,7 @@ Each query in this project is aimed at investigating different aspects of the Da
     ORDER BY
       salary_year_avg DESC
   ```
-**The results show**
+**💡The results show**
 - The top skills are SQL,Excel and POWERBI with salaries of $118,640(USD) per annum in USD with the company Invernegy.
 - Coming in second are Python as a skill and two of it's libraries numpy and panda along with SQL, zoom and slack at $100,500(USD) for Udacity Inc
 - Lastly American National pay $59,500(USD) for Data Analyst jobs with SQL and Tablue skills respectively.
@@ -113,7 +113,7 @@ Each query in this project is aimed at investigating different aspects of the Da
 
 
 
-### 3) Country Specific or remote jobs :: Query to find skills and no of jobs per skill for Data Analyst jobs that are in the US or are remote jobs
+### 3) 🌍Country Specific or remote jobs :: Query to find skills and no of jobs per skill for Data Analyst jobs that are in the US or are remote jobs 📍
   ```sql
     SELECT
       skills,
@@ -130,7 +130,7 @@ Each query in this project is aimed at investigating different aspects of the Da
     GROUP BY sd.skills, sd.skill_id
     ORDER BY skill_count DESC
   ```
- **The results show**
+ **💡The results show**
   - Python and SQL are the leading skills for US based or remote jobs with the total mention for each skill at 40,616 and 40,352 respectively
   - Following the top two skills, we see a steep drop in the mention for AWS and Azure skills at 18,286 and 13,928  respectively
 
@@ -140,7 +140,7 @@ Each query in this project is aimed at investigating different aspects of the Da
 
 
 
-### 4) Average salary by skill :: The next Query pulls data from the table for the average pay for each skill for remote Data analyst jobs
+### 4)💵Average salary by skill :: The next Query pulls data from the table for the average pay for each skill for remote Data analyst jobs
   ```sql
     SELECT
       skills,
@@ -156,7 +156,7 @@ Each query in this project is aimed at investigating different aspects of the Da
     GROUP BY sd.skills
     ORDER BY AVG(salary_year_avg) DESC
   ```
-**The results show**
+**💡The results show**
   - The top five skills differ from the past 3 result sets by showing niche skills such as
     - Pyspark (python BASED API, an open source framework for machine learning and big data analytics) with an average salary of $208,172
     - Bitbucket(Git based coding platform for hosting, managing and collaborating using git repositories) at $189,155,
@@ -164,7 +164,7 @@ Each query in this project is aimed at investigating different aspects of the Da
     - Couchbase(Cloud based database platform for high performance in-memory NoSQL database) at $160,515
     - Datarobot(AI platform for end to end learning and ML lifecycle and modeldeployment ) at $155,486
     - The query also pulls data for the lower end with skills such as Visual basic($62,500), Ruby($61,780), Css($52,500), Ruby on rails($51,059) and Wire($42,500)
-      - **All in ($USD)**
+      - **All in ($USD)** 💵
     - This shows the differing range of salaries for jobs in the same field and how capitalizing on different skills sets can lead to vastly different outcomes in salary earned per year
 
 
@@ -172,7 +172,7 @@ Each query in this project is aimed at investigating different aspects of the Da
 
 
 
-### 5) Most profitable skill: Comparing sum of jobs with their skills by salary average.
+### 5) 💸 Most profitable skill: Comparing sum of jobs with their skills by salary average.
    ```sql
       SELECT
         skills,
@@ -193,7 +193,7 @@ Each query in this project is aimed at investigating different aspects of the Da
       HAVING COUNT(jpf.job_id) > 10
       ORDER BY avg_yearly_salary DESC
    ```
-**The results show** 
+**💡The results show** 
   - AWS, Spark, SQL and Python come in at the highest annual salary rates at $165,000 (USD)
   - Closely followed by PowerBI at number 5 with an annual salary rate of $150,000 (USD)
   - The lower end of the spectrum come in at SQL, Excel and Word for $50,000 (USD) and lastly SQL and Excel at $45,000(USD)
@@ -204,7 +204,7 @@ Each query in this project is aimed at investigating different aspects of the Da
 
 
  
-# WHAT I LEARNED
+# WHAT I LEARNED 🔍
 **Throughout this adventure, I've really put some gas into honing my SQL skills**
 
 - Complex Query Crafting: I have built advanced SQL skills, merged tables like a pro and used the CTE WITH clause for expert table maneuvers.
@@ -212,7 +212,7 @@ Each query in this project is aimed at investigating different aspects of the Da
 - Analytical Magic: I actively honed my real world data-parsing and processing skills, taking questions, tackling raw data, and providing insightful answers with SQL queries
 
 
-# CONCLUSIONS 
+# CONCLUSIONS 🧠
 
 ### Insights
   1) **Top Paying Data Analyst Jobs --** There is a wide Salary range From $40 - $650 thousand (USD) indicating significant potential salaries in the field from diverse employers ranging from Tech companies to law firms to even job recruiters, different sectors of the economy need and pay well for Data Analysis skills. Diverse job titles show diverse job roles in finance, tech, management to name a few
@@ -223,12 +223,15 @@ Each query in this project is aimed at investigating different aspects of the Da
   5) **Optimal Skills for Job Market Value --**  - AWS, Spark, SQL and Python come in at the highest annual salary rates at $165,000 (USD). Closely followed by PowerBI at number 5 with an annual salary rate of $150,000 (USD). The lower end of the spectrum come in at SQL, Excel and Word for $50,000 (USD) and lastly SQL and Excel at $45,000(USD). This shows even with the same skills, salary growth in the field as a data analyst is not only realistic, but very consistent due to the number of jobs avaialble per skill with different salary ranges 
 
 
-### Closing Thoughts
+### Closing Thoughts 🧠
 ```
 This project enhanced my SQL skills by a lot, I had previously tried to learn SQL on my own and while I made progress,
 it was discouraging just learning it without a game plan or something to work towards.
-Having Luke Barousse guide me and give me realistic examples and real world application projects related to SQL was really monumental to my understanding and motivation to learning SQL.
+Having Luke Barousse guide me and give me realistic examples and real world application projects related to SQL
+was really monumental to my understanding and motivation to learning SQL.
 This project also gave me an idea of how SQL and other skills such as Python and Python libraries such as numpy,
-pandas and skills such as Pyspark which involve having to specialize give me hope that guided effort in this field can be rewarded with good pay. Especially in a world reliant on technology,
-therefore data, with SQL and the skills highlighted in this project I realize I'm working towards something that will pay off as I put more effort and specialize in my specific career path
+pandas and skills such as Pyspark which involve having to specialize give me hope that guided effort in this field
+can be rewarded with good pay.
+Especially in a world reliant on technology,therefore data, with SQL and the skills highlighted in this project,
+I realize I'm working towards something that will pay off as I put more effort and specialize in my specific career path
 ```
