@@ -24,6 +24,8 @@ For my dive into the data analyst job market, I used several key tools including
 - **VScode**: One of the IDE's used to manage and execute SQL queries as well as integrate with postgreSQL
 - **Google Colab** : Another IDE used while on the move and not having access to my PC, used in accordance with python to import files from Drive and connect to postgreSQL and run SQL code using %sql magic
 - **Python**: Used to import files from drive and access PostgreSQL as well as use %sql magic to run SQL queries on colab
+- **Notepad**: Used to store Data in .csv format 
+- **PowerBI**: Used to import Data in .csv format to create visuals 
 - **bash** : used to create a local directory on colab to store the imported files from drive 
 - **Git&Github** : Used for collaboration and project tracking to share my SQL queries from both IDE's.
 
@@ -43,17 +45,18 @@ Each query in this project is aimed at investigating different aspects of the Da
     FROM
       job_postings_fact jpf
     LEFT JOIN company_dim cd ON jpf.company_id = cd.company_id
-    WHERE job_title_short = 'Data Analyst' AND (job_location = 'United States' OR job_location = 'Anywhere') AND job_no_degree_mention = TRUE AND salary_year_average IS NOT NULL 
+    WHERE job_title_short = 'Data Analyst'
+        AND (job_location = 'United States' OR job_location = 'Anywhere')
+        AND job_no_degree_mention = TRUE
+        AND salary_year_average IS NOT NULL 
     ORDER BY salary_year_avg DESC
     LIMIT 100
   ```
-
-
 **💡The results show**
   - Wide Salary range From $40 - $650 thousand (USD) indicating significant potential salaries in the field
   - Diverse employers From Tech companies to law firms to even job recruiters, different sectors of the economy need and pay well for Data Analyst skills
   - Job Variety Along with diverse employers, diverse job titles show diverse job roles in finance, tech, management to name a few
-
+<img width="1316" height="744" alt="q1 vizzhh" src="https://github.com/user-attachments/assets/5d5b1d93-9ccd-4ddb-afc3-fcb9455da47e" />
 
 
 
@@ -107,6 +110,9 @@ Each query in this project is aimed at investigating different aspects of the Da
 - Coming in second are Python as a skill and two of it's libraries numpy and panda along with SQL, zoom and slack at $100,500(USD) for Udacity Inc
 - Lastly American National pay $59,500(USD) for Data Analyst jobs with SQL and Tablue skills respectively.
 - This result set also took into consideration that no skills without salary values i.e null values were pulled from the table.
+<img width="1318" height="745" alt="q2 vizzhh" src="https://github.com/user-attachments/assets/ad05b561-7eb8-429b-ab32-0e3491e350be" />
+
+
 
 
 
@@ -134,7 +140,7 @@ Each query in this project is aimed at investigating different aspects of the Da
   - Python and SQL are the leading skills for US based or remote jobs with the total mention for each skill at 40,616 and 40,352 respectively
   - Following the top two skills, we see a steep drop in the mention for AWS and Azure skills at 18,286 and 13,928  respectively
 
-
+<img width="162" height="249" alt="q3 vizzhh" src="https://github.com/user-attachments/assets/abacb8d4-bc6e-4e66-9503-d620d0124c98" />
 
 
 
@@ -166,6 +172,7 @@ Each query in this project is aimed at investigating different aspects of the Da
     - The query also pulls data for the lower end with skills such as Visual basic($62,500), Ruby($61,780), Css($52,500), Ruby on rails($51,059) and Wire($42,500)
       - **All in ($USD)** 💵
     - This shows the differing range of salaries for jobs in the same field and how capitalizing on different skills sets can lead to vastly different outcomes in salary earned per year
+<img width="182" height="230" alt="q4 vishhh" src="https://github.com/user-attachments/assets/91a94e79-df8c-4902-ae56-7faf017017e8" />
 
 
 
@@ -199,6 +206,7 @@ Each query in this project is aimed at investigating different aspects of the Da
   - The lower end of the spectrum come in at SQL, Excel and Word for $50,000 (USD) and lastly SQL and Excel at $45,000(USD)
   - This shows even with the same skills, salary growth in the field as a data analyst is not only realistic, but very consistent due to the number of jobs avaialble per skill with different salary ranges 
 
+<img width="287" height="224" alt="q5 vizzh" src="https://github.com/user-attachments/assets/32a895ac-ed86-4a4f-86f3-66988da10e73" />
 
 
 
