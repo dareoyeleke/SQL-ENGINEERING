@@ -1,133 +1,139 @@
-📊 Labor Market Analytics: Data Jobs
+# 📊 Labor Market Analytics: Data Jobs
 
-SQL · Power BI · Workforce & Compensation Insights
+## SQL · Power BI · Workforce & Compensation Insights
 
-Executive Summary
+### Executive Summary
 
 <img width="1920" height="1080" alt="DATA JOBS DASHBOARD 2 0" src="https://github.com/user-attachments/assets/0d6a31da-55ef-44a3-af7b-1aba138d5bc6" />
 
 
-This project delivers an end-to-end labor market analysis of the data jobs ecosystem using 497K+ real-world job postings. The analysis focuses on compensation trends, role distribution, skill demand, and geographic concentration, transforming raw job data into decision-ready workforce insights. Check it the raw code here ([sql_basics_project.ipynb]
+```
+This project delivers an end-to-end labor market analysis of the data jobs ecosystem using 497K+ real-world job postings.
+The analysis focuses on compensation trends, role distribution, skill demand, and geographic concentration,
+transforming raw job data into decision-ready workforce insights.
+```
+Check it the raw code here (sql_basics_project.ipynb) 
 
 Using SQL for data extraction and transformation and Power BI for interactive reporting, the project demonstrates how analytics teams can support hiring strategy, workforce planning, and market benchmarking without overengineering or black-box modeling.
 
-Business Questions
+**Business Questions**
 
 This analysis was designed to answer practical, stakeholder-relevant questions such as:
 
-Which data roles command the highest compensation?
+-  Which data roles command the highest compensation?
 
-How does pay vary by role type, location, and job category?
+-  How does pay vary by role type, location, and job category?
 
-Where are data jobs geographically concentrated?
+-  Where are data jobs geographically concentrated?
 
-How do remote and location-based roles differ in salary structure?
+-  How do remote and location-based roles differ in salary structure?
 
-What insights can inform hiring strategy and workforce planning?
+-  What insights can inform hiring strategy and workforce planning?
 
-Data Overview
+**Data Overview**
 
-Records: 497,000+ job postings
+-  Records: 497,000+ job postings
 
-Domain: Data & Analytics labor market
+-  Domain: Data & Analytics labor market
 
-Source: Public job-posting datasets
+-  Source: Public job-posting datasets
 
-Key fields: Role title, salary, location, employment type
+-  Key fields: Role title, salary, location, employment type
 
-Salary data was standardized to enable consistent cross-role and geographic comparisons.
+-  Salary data was standardized to enable consistent cross-role and geographic comparisons.
 
-Methodology
-1️⃣ Data Extraction & Transformation (SQL)
+### Methodology
 
-Queried and analyzed job-posting data using PostgreSQL
+**1️⃣ Data Extraction & Transformation (SQL)**
 
-Applied:
+-  Queried and analyzed job-posting data using PostgreSQL
 
-Common Table Expressions (CTEs)
+**Applied:**
 
-Complex joins
+-  Common Table Expressions (CTEs)
 
-Aggregations and filters
+-  Complex joins
 
-Standardized salary formats (hourly vs annual)
+-  Aggregations and filters
 
-Structured role categories for consistent analysis
+-  Standardized salary formats (hourly vs annual)
 
-2️⃣ Analytical Modeling (Power BI)
+-  Structured role categories for consistent analysis
 
-Imported cleaned SQL outputs into Power BI
+**2️⃣ Analytical Modeling (Power BI)**
 
-Modeled relationships and measures using:
+-  Imported cleaned SQL outputs into Power BI
 
-Power Query
+-  Modeled relationships and measures using:
 
-DAX
+-  Power Query
 
-Built calculated measures for:
+-  DAX
 
-Average salary
+**Built calculated measures for:**
 
-Job counts
+-  Average salary
 
-Geographic comparisons
+-  Job counts
 
-Role-level benchmarks
+-  Geographic comparisons
 
-3️⃣ Visualization & Reporting (Power BI)
+-  Role-level benchmarks
 
-Developed an interactive dashboard including:
+**3️⃣ Visualization & Reporting (Power BI)**
 
-KPI summary cards
+-  Developed an interactive dashboard including:
 
-Clustered bar charts for role-based compensation
+-  KPI summary cards
 
-Line and area charts for salary trends
+-  Clustered bar charts for role-based compensation
 
-ArcGIS maps for geographic job concentration
+-  Line and area charts for salary trends
 
-Implemented slicers, bookmarks, and navigation for usability
+-  ArcGIS maps for geographic job concentration
 
-Applied conditional formatting and visual hierarchy for clarity
+-  Implemented slicers, bookmarks, and navigation for usability
 
-Key Insights
+-  Applied conditional formatting and visual hierarchy for clarity
+
+**Key Insights**
 
 <img width="1920" height="1080" alt="DATA JOBS SALARY ADJUSTABLE 2 0" src="https://github.com/user-attachments/assets/4d9c8632-1d0e-49b4-ad64-39497221c577" />
 
 
-Compensation is role-stratified: Specialized and senior data roles consistently command higher pay.
+-  Compensation is role-stratified: Specialized and senior data roles consistently command higher pay.
 
-Geography matters: High-paying roles cluster in specific metro areas, though remote roles partially reduce geographic constraints.
+-  Geography matters: High-paying roles cluster in specific metro areas, though remote roles partially reduce geographic constraints.
 
-Market structure outweighs titles: Role function and market demand explain compensation differences more than job naming conventions.
+-  Market structure outweighs titles: Role function and market demand explain compensation differences more than job naming conventions.
 
-Remote vs on-site dynamics differ: Salary and demand patterns vary meaningfully between remote and location-based roles.
+-  Remote vs on-site dynamics differ: Salary and demand patterns vary meaningfully between remote and location-based roles.
 
-Dashboard Capabilities
+### Dashboard Capabilities
 
-The Power BI dashboard enables users to:
+**The Power BI dashboard enables users to:**
 
-Compare salaries across roles and locations
+-  Compare salaries across roles and locations
 
-Identify high-demand, high-paying data roles
+-  Identify high-demand, high-paying data roles
 
-Explore geographic concentration of job postings
+-  Explore geographic concentration of job postings
 
-Filter insights dynamically by role and region
+-  Filter insights dynamically by role and region
 
 (Representative dashboard screenshots are included in the repository.)
 
-Tools & Technologies 🧰
+### Tools & Technologies 🧰
 
-SQL 🧮: PostgreSQL (CTEs, joins, aggregations) 
+-  SQL 🧮: PostgreSQL (CTEs, joins, aggregations) 
 
-BI & Analytics: Power BI, Power Query, DAX
+-  BI & Analytics: Power BI, Power Query, DAX
 
-Visualization: ArcGIS Maps 🌍, KPI visuals, trend charts
+-  Visualization: ArcGIS Maps 🌍, KPI visuals, trend charts
 
-Workflow: GitHub version control, reproducible queries
+-  Workflow: GitHub version control, reproducible queries
 
-⚙️ How to Reproduce
+## ⚙️ How to Reproduce
 ### Requirements
 
 -  PostgreSQL
@@ -136,7 +142,7 @@ Workflow: GitHub version control, reproducible queries
 
 -  psql or a SQL GUI client
 
-### Steps
+## Steps
 
 -  Clone this repository
 
