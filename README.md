@@ -7,12 +7,12 @@
 <img width="1920" height="1080" alt="DATA JOBS DASHBOARD 2 0" src="https://github.com/user-attachments/assets/0d6a31da-55ef-44a3-af7b-1aba138d5bc6" />
 
 
-```
-This project delivers an end-to-end labor market analysis of the data jobs ecosystem using 497K+ real-world job postings.
-The analysis focuses on compensation trends, role distribution, skill demand, and geographic concentration,
-transforming raw job data into decision-ready workforce insights.
-```
-Check it the raw code here (https://github.com/dareoyeleke/labor-market-analytics-data-jobs/blob/main/sql_basics_project.ipynb)
+This project delivers an end-to-end labor market analysis of the data jobs ecosystem using 497K+ real-world job postings. The analysis focuses on compensation trends, role distribution, skill demand, and geographic concentration—transforming raw job-posting data into decision-ready workforce insights.
+
+Using SQL for data extraction and transformation and Power BI for interactive reporting, the project demonstrates how analytics teams can support hiring strategy, workforce planning, and market benchmarking without overengineering or black-box modeling.
+
+🔗 SQL analysis notebook: 
+-  (https://github.com/dareoyeleke/labor-market-analytics-data-jobs/blob/main/sql_basics_project.ipynb)
 
 Using SQL for data extraction and transformation and Power BI for interactive reporting, the project demonstrates how analytics teams can support hiring strategy, workforce planning, and market benchmarking without overengineering or black-box modeling.
 
@@ -101,13 +101,13 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 <img width="1920" height="1080" alt="DATA JOBS SALARY ADJUSTABLE 2 0" src="https://github.com/user-attachments/assets/4d9c8632-1d0e-49b4-ad64-39497221c577" />
 
 
--  Compensation is role-stratified: Specialized and senior data roles consistently command higher pay.
+-  **Compensation is role-stratified:** Specialized and senior data roles consistently command higher pay.
 
--  Geography matters: High-paying roles cluster in specific metro areas, though remote roles partially reduce geographic constraints.
+-  **Geography matters:** High-paying roles cluster in specific metro areas, though remote roles partially reduce geographic constraints.
 
--  Market structure outweighs titles: Role function and market demand explain compensation differences more than job naming conventions.
+-  **Market structure outweighs titles:** Role function and market demand explain compensation differences more than job naming conventions.
 
--  Remote vs on-site dynamics differ: Salary and demand patterns vary meaningfully between remote and location-based roles.
+-  **Remote vs on-site dynamics differ:** Salary and demand patterns vary meaningfully between remote and location-based roles.
 
 ### Dashboard Capabilities
 
@@ -151,3 +151,7 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 -  Run the SQL files in the /sql folder
 
 -  Explore queries and modify filters for deeper analysis
+
+### 📌 Portfolio Note
+
+This repository consolidates prior job-market SQL analysis and Power BI dashboard work into a single, canonical analytics project designed for portfolio and professional review.
