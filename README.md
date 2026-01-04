@@ -162,3 +162,10 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 ### 📌 Portfolio Note
 
 This repository consolidates prior job-market SQL analysis and Power BI dashboard work into a single, canonical analytics project designed for portfolio and professional review.
+
+### 📎 Author
+
+[Dare Oyeleke]
+Data Analyst | Healthcare Analytics
+[(https://www.linkedin.com/in/dareoyeleke/)] | [(https://github.com/dareoyeleke)]
+
