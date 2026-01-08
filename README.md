@@ -1,5 +1,12 @@
 # 📊 Labor Market Analytics: Data Jobs
+
 <br><br>
+
+A 497,000+ job posting-level analysis of trends in compensation, skill demand, and geographic distribution, using SQL for data extraction and Power BI for reporting.
+
+<br><br>
+
+Using SQL for data extraction and transformation and Power BI for interactive reporting, the project demonstrates how analytics teams can support hiring strategy, workforce planning, and market benchmarking without overengineering or black-box modeling.
 ## SQL · Power BI · Workforce & Compensation Insights
 <br><br>
 
@@ -54,11 +61,11 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 
 -  Which data roles command the highest compensation?
 
--  How does pay vary by role type, location, and job category?
+-  How does pay vary by role type and job category?
 
 -  Where are data jobs geographically concentrated?
 
--  How do remote and location-based roles differ in salary structure?
+-  How well does working in the data field pay without earning a degree?
 
 -  What insights can inform hiring strategy and workforce planning?
   
@@ -157,6 +164,8 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 <img width="1920" height="1080" alt="DATA JOBS SALARY ADJUSTABLE 2 0" src="https://github.com/user-attachments/assets/4d9c8632-1d0e-49b4-ad64-39497221c577" />
 <br><br>
 
+-  **Top Paying roles:** The top paying roles are all Senior level roles with 4/5 roles being Data Scientist roles, with the exception in 4th place as a Data Engineering manager role. The salaries were ($475, $640, $850, $870 and $920) thousand in USD
+
 -  **Compensation is role-stratified:** Specialized and senior data roles consistently command higher pay.
 
 -  **Geography matters:** High-paying roles cluster in specific metro areas, though remote roles partially reduce geographic constraints.
@@ -166,11 +175,25 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 -  **Remote vs on-site dynamics differ:** Salary and demand patterns vary meaningfully between remote and location-based roles. On-site roles also greatly outweigh postings or Remote roles
 
 -  **Skill Distribution in regards to compenstion:** Certain Niche or low supply skills have higher compensation.
+
+-  **The top and bottom 5 most profitable skills per job posting and their compensation on Average are** 
+<img width="287" height="224" alt="Top and Bottom 5 Average Salaries Per skill Count" src="https://github.com/user-attachments/assets/d215fc66-f15c-4a1b-b905-6f7c7d13faf2" />
+
+<br><br>
+
+-  **The Job market can be rewarding without even earning a formal degree as shown below**
+
+<br>
+
+<img width="1316" height="744" alt="Top 10 Salaries" src="https://github.com/user-attachments/assets/27483754-3678-4bd3-88b5-2515305ce6d7" />
+
 <br><br>
 
 
 ## Recommendations (NOTE - These claims are hypotheses influenced by industry context as opposed to data driven conclusions)
--  With the onset of COVID, remote jobs sky rocketed especially for computer based roles such as most Data Jobs. However the visual [DEGREE, REMOTE AND JOB TYPES.PNG] found in [POWER_BI/DAX & QUERY VISUALS] on the main repo page at this link 🔗 [https://github.com/dareoyeleke/labor-market-analytics-data-jobs/blob/main/POWER_BI/DAX%20%26%20QUERY%20VISUALS%20/SALARY%20VS%20SKILL%20COUNT.png], shows a 13% demand of job postings are remote. While not included as part of this study, one can assume a higher preference of remote jobs for Data roles for the genera population. Companies should consider more hybrid positions for Data facing roles at the very least or cater more job postings to be remote to potentially reduce employee stress and churn over time.
+<br>
+
+-  Companies should consider more hybrid positions for Data facing roles at the very least or cater more job postings to be remote to potentially reduce employee stress and churn over time. With the onset of COVID, remote jobs sky rocketed especially for computer based roles such as most Data Jobs. However the visual [DEGREE, REMOTE AND JOB TYPES.PNG] found in [POWER_BI/DAX & QUERY VISUALS] on the main repo page at this link 🔗 [https://github.com/dareoyeleke/labor-market-analytics-data-jobs/blob/main/POWER_BI/DAX%20%26%20QUERY%20VISUALS%20/SALARY%20VS%20SKILL%20COUNT.png], shows a 13% demand of job postings are remote. While not included as part of this study, one can assume a higher preference of remote jobs for Data roles for the genera population. 
   
 -  Fostering career growth and matching compensation. Companies should endeavor to match the skill and experience level of Senior level roles with more compensation, as shown in the visual [POWER_BI/DAX & QUERY VISUALS/JOB TITLE, ROLE, COMPANY, SALARY (TOP 10).PNG] at this link 🔗 [https://github.com/dareoyeleke/labor-market-analytics-data-jobs/blob/main/POWER_BI/DAX%20%26%20QUERY%20VISUALS%20/JOB%20TITLE%2C%20ROLE%2C%20COMPANY%2C%20SALARY%20(TOP%2010).PNG] -  Context implies Senior positions are more experienced or skilled, and require more skill than the non-senior positions, the compensation doesn't match the demand.  For difference in job posting according to seniority, the differences are as such Data Analyst(97,519 at 86%), Data Scientists(75,933 at 77%) and Data Engineers(98,386 at 76%). With Median difference in compensation as such Data Analyst ($20,000 at 19%), Data Scientists($30,743 at 20%) and Data Engineers ($12,280 at 9%). There is a huge difference in postings between Senior positions and compensation, with 76% - 86% difference in position according to seniority, with 9% - 20% median difference in compensation.
 
@@ -238,11 +261,11 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 
 ## Steps
 
--  SQL notebook contains queries and WorkSpace link -[https://lukeb.co/sql_jobs_db]- can be used to derive data by running queries from SQL notebook
+-  SQL notebook contains queries to derive csv's for the first set of visuals below and WorkSpace link -[https://lukeb.co/sql_jobs_db]- can be used to running queries from SQL notebook to derive data for csv's
 
 -  Results from Query can be exported to csv to create Power Bi Visuals 
 
--  Full CSV's data source can be loaded into PowerBI for remaining Visual and Dashboard Creation
+-  Full CSV's from data source can be loaded into PowerBI for remaining Visual and Dashboard Creation
 
 -  The following Visuals (All in the main repository file) were created with the queries from the SQL notebook linked above
     -    Top 10 Salaries.PNG
