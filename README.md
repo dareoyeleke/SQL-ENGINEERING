@@ -2,6 +2,18 @@
 <br><br>
 ## SQL · Power BI · Workforce & Compensation Insights
 <br><br>
+
+## How To Read This Project 
+EXECUTIVE SUMMARY ---> BUSINESS QUESTIONS ---> DATA OVERVIEW ---> KEY INSIGHTS --->  RECOMMENDATIONS ---> LIMITATIONS.
+<br><br>
+
+## Lastly 
+Reproducing the project comes last with the
+1)  Steps to Reproduce
+2)  Dataset Link access
+3)  Required tools
+4)  Methodology
+5)  CSV's generated for specific visual creation
 ## Executive Summary
 
 <img width="1920" height="1080" alt="DATA JOBS DASHBOARD 2 0" src="https://github.com/user-attachments/assets/0d6a31da-55ef-44a3-af7b-1aba138d5bc6" />
@@ -13,6 +25,8 @@
 This project delivers an end-to-end labor market analysis of the data jobs ecosystem using 497K+ real-world job postings. The analysis focuses on compensation trends, role distribution, skill demand, and geographic concentration—transforming raw job-posting data into decision-ready workforce insights.
 
 Using SQL for data extraction and transformation and Power BI for interactive reporting, the project demonstrates how analytics teams can support hiring strategy, workforce planning, and market benchmarking without overengineering or black-box modeling.
+<br><br>
+
 
 ### SQL Script used to query Data can be accessed at
 
@@ -221,7 +235,15 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
     -    Top and Bottom 5 Average Salaries Per skill Count.PNG
     -    Top and bottom 5 Average Salary per Skill.PNG
 
--  The remaining visuals (Dashboard, Median Hourly and Yearly Salary i.e Visual 2 on this page) were created using the Dim tables attached in the Data Source above
+-  The remaining visuals from the main repository page in the POWER_BI/DAX & QUERY VISUALS file were made by importing the dim tables into Power Bi, and then transormed and worked on with DAX
+    -  NAVIGATION PAGE.png
+    -  DEGREE, REMOTE AND JOB TYPES.PNG
+    -  JOB TITLE, ROLE, COMPANY, SALARY (TOP 10).PNG
+    -  SALARY VS SKILL COUNT.png
+    -  STAR SCHEMA VS JOB SPECIFIC SKILLS.png
+    -  TOP COMPENSATION, DEGREE REQ.PNG
+    -  YEAR 2024 JOB POSTING TRENDS.png
+    -  YEARLY VS HOURLY SALARY FOR DATA JOBS.png
 
 -  Explore queries and modify filters for deeper analysis
 <br><br>
