@@ -173,15 +173,29 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 
 -  **Market structure outweighs titles:** Role function and market demand explain compensation differences more than job naming conventions.
 
+-  **Skill distribution in regards to compensation:** Certain Niche or low supply skills have higher compensation.
+
 -  **Remote vs on-site dynamics differ:** Salary and demand patterns vary meaningfully between remote and location-based roles. On-site roles also greatly outweigh postings or Remote roles
 
--  **Skill Distribution in regards to compenstion:** Certain Niche or low supply skills have higher compensation.
+<img width="460" height="317" alt="Remote VS Non-Remote Jobs" src="https://github.com/user-attachments/assets/1611cbd2-791d-46e2-9d32-e85dbaea83a5" />
 
--  **The top and bottom 5 most profitable skills per job posting for remote and non remote jobs respectivelly and their compensation on Average are** 
+
+
+-  **Comparing remote VS non-remote compensation per skill for Data Analysts**
+    -  The top and bottom 5 most profitable skills per job posting for remote jobs 
 
 <img width="182" height="230" alt="Top and bottom 5 Average Salary per Skill" src="https://github.com/user-attachments/assets/1c79e8e8-d488-4038-92a2-4294bea75d88" />
 
-<br><br>
+<br>  
+
+-  **Compared to**
+    -  The top and bottom 5 most profitable skills per job posting for Non-remote jobs
+ 
+  <img width="184" height="245" alt="NON REMOTE ANALYST 2 0" src="https://github.com/user-attachments/assets/a3eeaf46-604c-4918-bd3a-942ecffc630f" />
+
+-  Both skill sets differ from the visuals shown and while there's a huge difference in the number of postings shown as remote vs non-remote, the salary comparison for the highest and lowest postings among both classes are similar and although the non-remote posting has a top salary of $400,000, which is more than double that of the next salary for the non-remote posting at $179,000, and nearly double of the top role for the remote job at $208,000, we can conclude that basedon averages it is an outlier as even with different skill sets the rest of the salary ranges are much closer than the one outlier leads us to believe. 
+
+<br><br> 
 
 -  **The Job market can be rewarding without even earning a formal degree as shown below**
 
