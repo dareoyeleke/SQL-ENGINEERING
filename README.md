@@ -1,126 +1,113 @@
-SQL Engineering — Analytics Data Modeling & Metrics
-Overview
+# SQL Engineering — Analytics Data Modeling & Metrics
+## Overview
 
 This repository contains a collection of SQL engineering scripts designed to transform raw job posting data into analytics-ready tables and derived metrics.
 
-The focus of this project is SQL craftsmanship:
+## The focus of this project is SQL craftsmanship:
 
-data modeling
+-  Data modeling
 
-transformation logic
+-  Transformation logic
 
-aggregation correctness
+-  Aggregation correctness
 
-temporal analysis
+-  Temporal analysis
 
-segmentation and metric design
+-  Segmentation and metric design
 
-Any BI assets included in the repository are downstream consumers of the SQL layer and are not the primary artifact.
+**NOTE:** Any BI assets included in the repository are downstream consumers of the SQL layer and are not the primary artifact.
 
-Core SQL Skills Demonstrated
-Data Modeling & Transformation
+## Core SQL Skills Demonstrated
+-  Data Modeling & Transformation
 
-Staging raw data into clean, queryable structures
+-  Staging raw data into clean, queryable structures
 
-Designing dimension and fact tables with controlled grain
+-  Designing dimension and fact tables with controlled grain
 
-Normalizing inconsistent fields (roles, locations, compensation)
+-  Normalizing inconsistent fields (roles, locations, compensation)
 
-Managing one-to-many and many-to-many relationships
+-  Managing one-to-many and many-to-many relationships
 
-Aggregation & Metric Engineering
+-  Aggregation & Metric Engineering
 
-Building salary and compensation metrics using explicit aggregation logic
+-  Building salary and compensation metrics using explicit aggregation logic
 
-Preventing double counting through grain-aware grouping
+-  Preventing double counting through grain-aware grouping
 
-Conditional aggregation for segmented analysis (e.g. role, location, remote status)
+-  Conditional aggregation for segmented analysis (e.g. role, location, remote status)
 
-Use of median, average, and distribution-based measures
+-  Use of median, average, and distribution-based measures
 
-Window Functions
+-  Window Functions
 
-Ranking and percentile calculations for compensation analysis
+-  Ranking and percentile calculations for compensation analysis
 
-Salary distribution analysis using analytic functions
+-  Salary distribution analysis using analytic functions
 
-Comparative metrics within partitions (by role, location, seniority)
+-  Comparative metrics within partitions (by role, location, seniority)
 
-Date & Time Analysis
+-  Date & Time Analysis
 
-Parsing and standardizing date fields
+-  Parsing and standardizing date fields
 
-Time-based aggregation (monthly / yearly groupings)
+-  Time-based aggregation (monthly / yearly groupings)
 
-Temporal trend analysis of job postings and compensation
+-  Temporal trend analysis of job postings and compensation
 
-Handling incomplete or inconsistent date data
+-    Handling incomplete or inconsistent date data
 
-Segmentation Logic
+-  Segmentation Logic
 
-Role-based and seniority-based segmentation
+-  Role-based and seniority-based segmentation
 
-Remote vs on-site classification
+-  Remote vs on-site classification
 
-Skill-based grouping and comparison
+-  Skill-based grouping and comparison
 
-Geographic segmentation for location analysis
+-  Geographic segmentation for location analysis
 
-Data Quality & Assumptions
+-  Data Quality & Assumptions
 
-Explicit handling of missing or invalid salary values
+-  Explicit handling of missing or invalid salary values
 
-Conversion of hourly compensation to annualized figures using stated assumptions
+-  Conversion of hourly compensation to annualized figures using stated assumptions
 
-Filtering outliers that materially distort aggregates
+-  Filtering outliers that materially distort aggregates
 
-Deduplication at the defined fact grain
+-  Deduplication at the defined fact grain
 
-Repository Structure
-.
-├── sql/
-│   ├── staging/              # raw data cleaning and normalization
-│   ├── transformations/      # dimensional and fact table logic
-│   ├── metrics/              # aggregation and analytical queries
-│   ├── segmentation/         # role, location, and skill-based analysis
-│   └── time_analysis/        # date and trend-based queries
-│
-├── bi/                       # downstream Power BI assets (optional)
-└── README.md
-
-
-Primary artifact: /sql
+**Primary artifact:** /sql
 All analytical outputs are derived entirely from this layer.
 
-SQL Characteristics
+## SQL Characteristics
 
-Modular, readable scripts using CTE-based pipelines
+-  Modular, readable scripts using CTE-based pipelines
 
-ANSI-style SQL (portable across modern warehouses)
+-  ANSI-style SQL (portable across modern warehouses)
 
-Queries written with correctness, clarity, and debuggability in mind
+-  Queries written with correctness, clarity, and debuggability in mind
 
-Explicit assumptions documented in logic rather than implied
+-  Explicit assumptions documented in logic rather than implied
 
-Intended Use
+## Intended Use
 
 This repository is intended to demonstrate SQL engineering and analytical reasoning, not visualization design or narrative reporting.
 
 The scripts are suitable for:
 
-analytics engineering roles
+-  Analytics engineering roles
 
-data analyst roles with strong SQL expectations
+-  Data analyst roles with strong SQL expectations
 
-technical interviews and SQL walkthroughs
+-  Technical interviews and SQL walkthroughs
 
-Notes
+## Notes
 
-BI dashboards are included only to demonstrate downstream consumption
+-  BI dashboards are included only to demonstrate downstream consumption
 
-Insights and conclusions are entirely driven by the SQL layer
+-  Insights and conclusions are entirely driven by the SQL layer
 
-Scripts are designed to be adapted to Postgres, DuckDB, BigQuery, or similar engines
+-  Scripts are designed to be adapted to Postgres, DuckDB, BigQuery, or similar engines
 
 ## 📌 Portfolio Note
 
