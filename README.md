@@ -1,15 +1,12 @@
 # 📊 Labor Market Analytics: Data Jobs
-
-<br><br>
-
 A 497,000+ job posting-level analysis of trends in compensation, skill demand, and geographic distribution, using SQL for data extraction and Power BI for reporting.
 
 
-<br><br>
+<br> 
 
 Using SQL for data extraction and transformation and Power BI for interactive reporting, the project demonstrates how analytics teams can support hiring strategy, workforce planning, and market benchmarking without overengineering or black-box modeling.
-## SQL · Power BI · Workforce & Compensation Insights
-<br><br>
+# SQL · Power BI · Workforce & Compensation Insights
+<br> 
 
 ## How To Read This Project 
 EXECUTIVE SUMMARY ---> BUSINESS QUESTIONS ---> DATA OVERVIEW ---> KEY INSIGHTS --->  RECOMMENDATIONS ---> LIMITATIONS.
@@ -35,7 +32,6 @@ Reproducing the project comes last with the
 
 This project delivers an end-to-end labor market analysis of the data jobs ecosystem using 497K+ real-world job postings. The analysis focuses on compensation trends, role distribution, skill demand, and geographic concentration—transforming raw job-posting data into decision-ready workforce insights.
 
-Using SQL for data extraction and transformation and Power BI for interactive reporting, the project demonstrates how analytics teams can support hiring strategy, workforce planning, and market benchmarking without overengineering or black-box modeling.
 
 **NOTE :** Median Hourly Salary ADJUSTED (ADJ) (Consistenly used measure in POWER bI) is hourly rate totalled for 40 hours a week, and 52 weeks a year, i.e 2080 hours to compare pay with yearly salaried employees
 <br><br>
@@ -64,7 +60,7 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 
 -  How does pay vary by role type and job category?
 
--  Where are data jobs geographically concentrated?
+-  How do remote jobs compare to non-remote jobs?
 
 -  How well does working in the data field pay without earning a degree?
 
@@ -193,6 +189,15 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 
 <img width="1316" height="744" alt="Top 10 Salaries" src="https://github.com/user-attachments/assets/27483754-3678-4bd3-88b5-2515305ce6d7" />
 
+<br> 
+
+-  Accordingto the Visuals, Data Scientists show a much higher requirement in degree procurement as a hiring requirment in about 90% of the job postings in both senior and non-senior level positions recommending degrees for those in pursuit of Data science careers is therefore necessary for job safety. Data Engineers have a 50/50 split for both senior and non-senior postings. While senior postings may also focus less on degrees and more on skillset and previous experience, the non-senior roles show at the flip of a coin, Data Engineering positions may not require a degree as a pre-requisute for hiring. Data Analysts are a little more in favor of having a degree in the job posting requirement at about a 65% rate for both senior and non-senior positions as indicated by the job postings. All in all although both senior and non-senior postings across Data analysts, scientists and engineers show similar trends for levels of seniority in degree requirements, it doesn't take into consideration job roles, or number of years of experience. 
+
+<br> 
+<img width="1920" height="1040" alt="COLUMN AND BAR VISUALS" src="https://github.com/user-attachments/assets/39d6686a-dea2-45e5-b05e-11cebe7d164f" />
+
+
+
 <br><br>
 
 
@@ -200,8 +205,7 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 <br>
 
 -  Companies should consider more hybrid positions for Data facing roles at the very least or cater more job postings to be remote to potentially reduce employee stress and churn over time. With the onset of COVID, remote jobs sky rocketed especially for computer based roles such as most Data Jobs. However the visual [DEGREE, REMOTE AND JOB TYPES.PNG] found in [POWER_BI/DAX & QUERY VISUALS] on the main repo page at this link 🔗 [https://github.com/dareoyeleke/labor-market-analytics-data-jobs/blob/main/POWER_BI/DAX%20%26%20QUERY%20VISUALS%20/SALARY%20VS%20SKILL%20COUNT.png], shows a 13% demand of job postings are remote. While not included as part of this study, one can assume a higher preference of remote jobs for Data roles for the genera population.
-
-  -   
+ 
   
 -  Fostering career growth and matching compensation. Companies should endeavor to match the skill and experience level of Senior level roles with more compensation, as shown in the visual [POWER_BI/DAX & QUERY VISUALS/JOB TITLE, ROLE, COMPANY, SALARY (TOP 10).PNG] at this link 🔗 [https://github.com/dareoyeleke/labor-market-analytics-data-jobs/blob/main/POWER_BI/DAX%20%26%20QUERY%20VISUALS%20/JOB%20TITLE%2C%20ROLE%2C%20COMPANY%2C%20SALARY%20(TOP%2010).PNG] -  Context implies Senior positions are more experienced or skilled, and require more skill than the non-senior positions, the compensation doesn't match the demand.  For difference in job posting according to seniority, the differences are as such Data Analyst(97,519 at 86%), Data Scientists(75,933 at 77%) and Data Engineers(98,386 at 76%). With Median difference in compensation as such Data Analyst ($20,000 at 19%), Data Scientists($30,743 at 20%) and Data Engineers ($12,280 at 9%). There is a huge difference in postings between Senior positions and compensation, with 76% - 86% difference in position according to seniority, with 9% - 20% median difference in compensation.
 
@@ -212,6 +216,8 @@ This analysis was designed to answer practical, stakeholder-relevant questions s
 -  Specific Degree types were not present in the data set i.e (BS, MS, Doctorate)
 
 -  Median Hourly adjusted income was calculated to 2080 hours per year, while yearly hours worked for yearly salaried roles were not present in the dataset
+
+-  Degree requirements compared senior to non-senior positions without considering previous years of experience or specified Job Roles 
 
 
 
